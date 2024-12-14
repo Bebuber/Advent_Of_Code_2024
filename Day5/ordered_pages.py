@@ -6,7 +6,7 @@
 #    By: bebuber <bebuber@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/12/11 13:27:10 by bebuber           #+#    #+#              #
-#    Updated: 2024/12/11 14:29:37 by bebuber          ###   ########.fr        #
+#    Updated: 2024/12/14 17:38:23 by bebuber          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,7 +19,7 @@ def read_csv_file(file_path):
         reader = csv.reader(file, delimiter='|')
         reading_updates = False
         for row in reader:
-            if not row:  # Skip empty rows
+            if not row:
                 continue
             if len(row) == 1 and ',' in row[0]:
                 reading_updates = True
